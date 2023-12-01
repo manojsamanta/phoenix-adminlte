@@ -33,9 +33,19 @@
         <%= infobox2(@info1) %>
         </div>
         <!-- /.row -->
+        <!-- =========================================================== -->
+        <h5 class="mt-4 mb-2">Info Box With <code>bg-*</code></h5>
+        <div class="row">
+           <%= infobox3(@info3) %>
+        </div>
+        <!-- /.row -->
+        <!-- =========================================================== -->
+        <h5 class="mt-4 mb-2">Info Box With <code>bg-gradient-*</code></h5>
+        <div class="row">
+           <%= infobox3(@info4) %>
+        </div>
+        <!-- /.row -->
 
-        <%= render "infobox3.html" %>
-        <%= render "infobox4.html" %>
         <%= render "smallbox.html" %>
         <%= render "abilities.html" %>
         <%= render "direct-chat.html" %>
