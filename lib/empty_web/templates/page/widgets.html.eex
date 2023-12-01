@@ -22,9 +22,18 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+        <h5 class="mb-2">Info Box</h5>
+        <div class="row">
+        <%= infobox1(@info1) %>
+        </div>
+        <!-- /.row -->
+        <!-- =========================================================== -->
+        <h5 class="mb-2">Info Box With Custom Shadows <small><i>Using Bootstrap's Shadow Utility</i></small></h5>
+        <div class="row">
+        <%= infobox2(@info1) %>
+        </div>
+        <!-- /.row -->
 
-        <%= render "infobox1.html" %>
-        <%= render "infobox2.html" %>
         <%= render "infobox3.html" %>
         <%= render "infobox4.html" %>
         <%= render "smallbox.html" %>

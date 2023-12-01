@@ -10,6 +10,12 @@ defmodule EmptyWeb.PageController do
   end
 
   def widgets(conn, _params) do
-    render(conn, "widgets.html",  layout: {EmptyWeb.LayoutView, "admin.html"})
+    info1 = [
+             %{class: "bg-info", icon: "fa-envelope", text: "Messages", number: "1,410" }, 
+             %{class: "bg-success", icon: "fa-flag", text: "Bookmarks", number: "410"}, 
+             %{class: "bg-warning", icon: "fa-copy", text: "Uploads", number: "13,648"}, 
+             %{class: "bg-danger", icon: "fa-star", text: "Likes", number: "93,139"}
+            ]
+    render(conn, "widgets.html",  info1: info1, layout: {EmptyWeb.LayoutView, "admin.html"})
   end
 end
